@@ -64,7 +64,7 @@ def make_prediction(model, prediction_input, preprocessor_path, X_train_path):
     df_pred.to_excel(os.path.join(os.getcwd(),'new_predictions.xlsx'))
     return pred_dict
 
-def run_dlhub_prediction(prediction_input):
+def run_prediction(prediction_input):
     # comp_list (list): list of strings of material compositions to featurize and predict
 
     # Note: this function is meant to run in a DLHub container that will have access to the following files:
